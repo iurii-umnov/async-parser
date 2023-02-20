@@ -1,0 +1,4 @@
+.idea
+__pycache__
+main_dev.py
+/result/*
