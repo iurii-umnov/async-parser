@@ -17,7 +17,7 @@ car sales in Russia.
 Parser uses a number of open source projects to work properly:
 
 - [Python] - the main language
-- [aiohttp] - asynchronous connection
+- [aiohttp] - asynchronous connection and requests
 - [asyncio] - parallel computing (parsing)
 - [BeautifulSoup] - html pages/elements parsing
 

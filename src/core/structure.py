@@ -1,12 +1,15 @@
+import csv
+import re
+from collections import defaultdict
+from typing import List, Optional, Dict, Any
+
 import asyncio
 import aiohttp
 from aiohttp import ClientSession
 from bs4 import BeautifulSoup, ResultSet
-from src import Car, Link
-from collections import defaultdict
-from typing import List, Optional, Dict, Any
-import csv
-import re
+
+from src.core.enums import Link
+from src.dto.car import Car
 
 
 class Base:

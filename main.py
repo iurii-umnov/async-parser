@@ -1,5 +1,7 @@
 import asyncio
-from src import Drom, Brand
+
+from src.core.enums import Brand
+from src.core.structure import Drom
 
 
 async def main() -> None:
@@ -10,7 +12,7 @@ async def main() -> None:
     # ask brand until it exists
     while not await Drom.check_brand(brand):
         print(Brand.error.value)
-        # ask to provide car brand
+        # ask to provide car brand again
         brand = input(Brand.question.value)
     # parse all the cars under this brand
     await Drom.parse(brand)
